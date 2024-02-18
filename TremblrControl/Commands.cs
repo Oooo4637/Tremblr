@@ -61,6 +61,7 @@ namespace Tremblr.TremblrControl
 
         static public async Task SetSpeed(int targetSpeed = 0)
         {
+
             await semaphoreCommand.WaitAsync();
             try
             {
